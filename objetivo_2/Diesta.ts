@@ -4,8 +4,8 @@ export class Dieta{
     private calorias: number;
     private numComida: number;
     private horasAyuno: number;
-    private idNutricionista: string;
-    private idCliente: string;
+    private idNutricionista: number;
+    private idCliente: number;
     
     /**
      * Crea un objeto de la clase Dietas.
@@ -18,7 +18,7 @@ export class Dieta{
      * @returns Objeto de la clase Dietas.
      * 
      */    
-     constructor(calorias: number, numComida: number, horasAyuno: number, idNutricionista: string, idCliente: string){
+     constructor(calorias: number, numComida: number, horasAyuno: number, idNutricionista: number, idCliente: number){
         this.calorias = calorias;
         this.numComida = numComida;
         this.horasAyuno = horasAyuno;
@@ -58,7 +58,7 @@ export class Dieta{
      * @returns Identificador del nutricionista
      * 
      */
-    getIdNutricionista(): string{
+    getIdNutricionista(): number{
         return this.idNutricionista;
     }    
     
@@ -67,7 +67,7 @@ export class Dieta{
      * @returns Identificador del cliente
      * 
      */
-    getIdCliente(): string{
+    getIdCliente(): number{
         return this.idCliente;
     }
 

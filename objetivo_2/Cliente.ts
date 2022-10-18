@@ -1,11 +1,8 @@
 
+import { Usuario } from './Usuario';
+export class Cliente extends Usuario{
 
-export class Cliente {
 
-    private nombre: string;
-    private primerApellido: string;
-    private segundoApellido: string;
-    private DNI: string;
     private edad: number;
     private genero: boolean;
     private altura: number;
@@ -20,6 +17,8 @@ export class Cliente {
      * @param primerApellido: Primer apellido de tipo string.
      * @param segundoApellido: Segundo apellido de tipo string.
      * @param dni: Identificador del cliente de tipo string.
+     * @param email: Correo.
+     * @param password: Contraseña del nutricionista.
      * @param edad: Edad del cliente de tipo number.
      * @param genero: Género del cliente, se tiene como 0 o 1.
      * @param altura: Altura en cm.
@@ -31,11 +30,8 @@ export class Cliente {
      * 
      */    
     constructor(nombre: string, primerApellido: string, segundoApellido: string, dni: string,
-        edad: number, genero: boolean, altura: number, peso: number, cintura: number, cuello: number) {
-        this.nombre = nombre;
-        this.primerApellido = primerApellido;
-        this.segundoApellido = segundoApellido;
-        this.DNI = dni;
+        email: string, password: string, edad: number, genero: boolean, altura: number, peso: number, cintura: number, cuello: number) {
+        super(nombre, primerApellido, segundoApellido, dni, email, password)
         this.edad = edad;
         this.genero = genero;
         this.altura = altura;
@@ -44,42 +40,6 @@ export class Cliente {
         this.cuello = cuello;
     }
     
-
-    /**
-     * 
-     * @returns Nombre del cliente.
-     * 
-     */    
-    getNombre(): string{
-        return `${this.nombre}`;
-    }
-
-    /**
-     * 
-     * @returns Primer apellido.
-     * 
-     */ 
-    getPrimerApellido(): string{
-        return `${this.primerApellido}`;
-    }
-
-    /**
-     * 
-     * @returns Segundo apellido.
-     * 
-     */ 
-    getSegundoApellido(): string{
-        return `${this.segundoApellido}`;
-    }
-
-    /**
-     * 
-     * @returns DNI de tipo string
-     * 
-     */ 
-    getDNI(): string{
-        return `${this.DNI}`;
-    }
     
     /**
      * 
@@ -138,11 +98,13 @@ export class Cliente {
 
     /**
      * 
-     * @returns Devuelve todos los datos de un objeto creado de la clase Cliente, se usa a modo de comprobación.
+     * Llama a la clase padre (Usuario), para obtener los datos básicos más lo de esta clase
+     * 
+     * @returns Devuelve todos los datos de la clase Cliente.
      * 
      */
     getFichaCompleta(): string{
-        return `Nombre: ${this.nombre} ${this.primerApellido} ${this.segundoApellido},\nDNI: ${this.DNI}, \nedad: ${this.edad}, \naltura: ${this.altura},\ngenero: ${this.genero}, \npeso: ${this.peso}, \ncintura: ${this.cintura}, \ncuello: ${this.cuello}`
+        return super.getFichaCompleta() + ` edad: ${this.edad}, peso: ${this.peso}, \naltura ${this.altura}, genero: ${this.genero}, \ncintura: ${this.cintura}, cuello ${this.cuello}`;
     }
 
 }

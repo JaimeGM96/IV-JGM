@@ -1,9 +1,6 @@
+import { Usuario } from './Usuario';
+export class Nutricionista extends Usuario{
 
-export class Nutricionista{
-    private nombre: string;
-    private primerApellido: string;
-    private segundoApellido: string;
-    private DNI: string;
     private Id_Nutricionista: string;
 
 
@@ -13,54 +10,19 @@ export class Nutricionista{
      * @param primerApellido: Primer apellido de tipo string.
      * @param segundoApellido: Segundo apellido de tipo string.
      * @param dni: Identificador del cliente de tipo string.
+     * @param email: Correo.
+     * @param password: Contraseña del nutricionista.
      * @param id: Id_Nutricionista usado para identificar al nutricionista.
      * 
      * @returns Objeto de la clase Nutricionista con sus datos.
      * 
      */    
-    constructor(nombre: string, primerApellido: string, segundoApellido: string, dni: string, id: string){
-        this.nombre = nombre;
-        this.primerApellido = primerApellido;
-        this.segundoApellido = segundoApellido;
-        this.DNI = dni;
+    constructor(nombre: string, primerApellido: string, segundoApellido: string, dni: string, 
+        email: string, password: string, id: string){
+        super(nombre, primerApellido, segundoApellido, dni, email, password)
         this.Id_Nutricionista = id;
     }
 
-    /**
-     * 
-     * @returns Nombre del Nutricionista.
-     * 
-     */    
-      getNombre(): string{
-        return `${this.nombre}`;
-    }
-
-    /**
-     * 
-     * @returns Primer apellido.
-     * 
-     */ 
-    getPrimerApellido(): string{
-        return `${this.primerApellido}`;
-    }
-
-    /**
-     * 
-     * @returns Segundo apellido.
-     * 
-     */ 
-    getSegundoApellido(): string{
-        return `${this.segundoApellido}`;
-    }
-
-    /**
-     * 
-     * @returns DNI de tipo string
-     * 
-     */ 
-    getDNI(): string{
-        return `${this.DNI}`;
-    }
 
     /**
      * Usado como identificador del nutricionista.
@@ -74,11 +36,13 @@ export class Nutricionista{
 
     /**
      * 
-     * @returns Devuelve todos los datos de un objeto creado de la clase Nutricionista, se usa a modo de comprobación.
+     * Llama a la clase padre (Usuario), para obtener los datos básicos más lo de esta clase
+     * 
+     * @returns Devuelve todos los datos de la clase Nutricionista.
      * 
      */
-     getFichaCompleta(): string{
-        return `Nombre: ${this.nombre} ${this.primerApellido} ${this.segundoApellido},\nDNI: ${this.DNI}, Id: ${this.Id_Nutricionista}`
+    getFichaCompleta(): string{
+        return super.getFichaCompleta() + ` id_nutricionista: ${this.Id_Nutricionista}`;
     }
 
 }

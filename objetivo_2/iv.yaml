@@ -1,0 +1,7 @@
+lenguaje: typescript
+entidad:
+  - Usuario.ts
+  - Cliente.ts
+  - Nutricionista.ts
+  - Dietas.ts
+  - Prueba.ts
