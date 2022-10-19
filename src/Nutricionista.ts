@@ -1,7 +1,7 @@
 import { Usuario } from './Usuario';
 export class Nutricionista extends Usuario{
 
-    private Id_Nutricionista: string;
+    private Id_Nutricionista: number;
 
 
     /**
@@ -17,8 +17,8 @@ export class Nutricionista extends Usuario{
      * @returns Objeto de la clase Nutricionista con sus datos.
      * 
      */    
-    constructor(nombre: string, primerApellido: string, segundoApellido: string, dni: string, 
-        email: string, password: string, id: string){
+    constructor(id: number, nombre: string, primerApellido: string, segundoApellido: string, dni: string, 
+        email: string, password: string){
         super(nombre, primerApellido, segundoApellido, dni, email, password)
         this.Id_Nutricionista = id;
     }
@@ -30,8 +30,8 @@ export class Nutricionista extends Usuario{
      * @returns Id_Nutricionista de tipo string
      * 
      */ 
-     getIdNutricionista(): string{
-        return `${this.Id_Nutricionista}`;
+     getIdNutricionista(): number{
+        return this.Id_Nutricionista;
     }
 
     /**

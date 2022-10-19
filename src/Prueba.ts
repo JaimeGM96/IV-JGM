@@ -10,7 +10,7 @@ let paco:Cliente = new Cliente(123, "Paco", 'Jimenez', 'Lechuga', '76438303G', '
 console.log(`*** Datos de un cliente ***`)
 console.log(paco.getFichaCompleta() + `\n`)
 
-let marcos:Nutricionista = new Nutricionista("Marcos", 'Lucas', 'Techado', '85965742T', 'Marcos@gmail.com', "1234", "3fa3");
+let marcos:Nutricionista = new Nutricionista(1234, "Marcos", 'Lucas', 'Techado', '85965742T', 'Marcos@gmail.com', "1234");
 console.log(`*** Datos de un Nutricionista ***`)
 console.log(marcos.getFichaCompleta() + `\n`)
 
