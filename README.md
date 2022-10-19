@@ -8,3 +8,5 @@ El objetivo del desarrollo de este proyecto consiste en generar automáticamente
 
 ## Documentación
 - Configuración de git [enlace](docs/configuracion-git.md).
+- Historias de usuario [enlace](docs/historias-usuario.md).
+- Milestones [enlace](docs/milestones.md).
