@@ -1,6 +1,5 @@
 lenguaje: typescript
 entidad:
-  - scr/Usuario.ts
   - scr/Cliente.ts
   - scr/Nutricionista.ts
   - scr/Dietas.ts
