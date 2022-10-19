@@ -6,7 +6,7 @@ import { Dieta } from './Diesta';
 
 
 
-let paco:Cliente = new Cliente("Paco", 'Jimenez', 'Lechuga', '76438303G', 'pacoJimenez@gmail.com', '123456', 25, true, 178, 83, 40,30);
+let paco:Cliente = new Cliente(123, "Paco", 'Jimenez', 'Lechuga', '76438303G', 'pacoJimenez@gmail.com', '123456', 25, true, 178, 83, 40,30);
 console.log(`*** Datos de un cliente ***`)
 console.log(paco.getFichaCompleta() + `\n`)
 

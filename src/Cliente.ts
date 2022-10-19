@@ -9,10 +9,12 @@ export class Cliente extends Usuario{
     private peso: number;
     private cintura: number;
     private cuello: number;
+    private idCliente: number;
 
 
     /**
      * Crea un objeto de la clase Cliente.
+     * @param idCliente: Identificador del cliente.
      * @param nombre: Nombre del cliente de tipo string.
      * @param primerApellido: Primer apellido de tipo string.
      * @param segundoApellido: Segundo apellido de tipo string.
@@ -29,9 +31,10 @@ export class Cliente extends Usuario{
      * @returns Objeto de la clase Cliente con todos sus datos personales.
      * 
      */    
-    constructor(nombre: string, primerApellido: string, segundoApellido: string, dni: string,
+    constructor(idCliente: number, nombre: string, primerApellido: string, segundoApellido: string, dni: string,
         email: string, password: string, edad: number, genero: boolean, altura: number, peso: number, cintura: number, cuello: number) {
         super(nombre, primerApellido, segundoApellido, dni, email, password)
+        this.idCliente = idCliente;
         this.edad = edad;
         this.genero = genero;
         this.altura = altura;
@@ -40,7 +43,15 @@ export class Cliente extends Usuario{
         this.cuello = cuello;
     }
     
-    
+    /**
+     * 
+     * @returns Edad.
+     * 
+     */     
+      getIdCliente(): number{
+        return this.idCliente;
+    }
+
     /**
      * 
      * @returns Edad.
@@ -104,7 +115,7 @@ export class Cliente extends Usuario{
      * 
      */
     getFichaCompleta(): string{
-        return super.getFichaCompleta() + ` edad: ${this.edad}, peso: ${this.peso}, \naltura ${this.altura}, genero: ${this.genero}, \ncintura: ${this.cintura}, cuello ${this.cuello}`;
+        return `Id cliente: ${this.idCliente}\n ` + super.getFichaCompleta() + ` edad: ${this.edad}, peso: ${this.peso}, \naltura ${this.altura}, genero: ${this.genero}, \ncintura: ${this.cintura}, cuello ${this.cuello}`;
     }
 
 }
