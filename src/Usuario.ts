@@ -8,6 +8,7 @@ export abstract class Usuario{
     private email: string;
     private password: string;
 
+
     /**
      * Crea un objeto de la clase Nutricionista.
      * @param nombre: Nombre del cliente de tipo string.
@@ -15,12 +16,8 @@ export abstract class Usuario{
      * @param segundoApellido: Segundo apellido de tipo string.
      * @param dni: Identificador del cliente de tipo string.
      * @param email: Correo.
-     * @param password: contraseña para inicio de sesión del usuario.
-     * 
-     * @returns Objeto de la clase Nutricionista con sus datos.
-     * 
-     */    
-     constructor(nombre: string, primerApellido: string, segundoApellido: string, 
+    */
+    constructor(nombre: string, primerApellido: string, segundoApellido: string, 
         dni: string, email: string, password: string){
         this.nombre = nombre;
         this.primerApellido = primerApellido;
@@ -67,7 +64,6 @@ export abstract class Usuario{
     }
 
     /**
-     * 
      * @returns Devuelve todos los datos de la clase Usuario.
      * 
      */
