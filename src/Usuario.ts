@@ -1,10 +1,11 @@
 
 
 export abstract class Usuario{
-    private nombre: string;
-    private primerApellido: string;
-    private segundoApellido: string;
-    private DNI: string;
+    
+    readonly nombre: string;
+    readonly primerApellido: string;
+    readonly segundoApellido: string;
+    readonly DNI: string;
     private email: string;
     private password: string;
 

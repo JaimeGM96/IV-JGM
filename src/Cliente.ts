@@ -4,7 +4,7 @@ export class Cliente extends Usuario{
 
 
     private edad: number;
-    private genero: boolean;
+    readonly genero: boolean;
     private altura: number;
     private peso: number;
     private cintura: number;
