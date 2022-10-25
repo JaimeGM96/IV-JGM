@@ -3,9 +3,9 @@ import { Usuario } from './Usuario';
 export class Cliente extends Usuario{
 
 
-    private edad: number;
+    edad: number;
     readonly genero: boolean;
-    private altura: number;
+    altura: number;
     private peso: number;
     private cintura: number;
     private cuello: number;
@@ -52,33 +52,6 @@ export class Cliente extends Usuario{
         return this.idCliente;
     }
 
-    /**
-     * 
-     * @returns Edad.
-     * 
-     */     
-    getEdad(): number{
-        return this.edad;
-    }
-    
-    /**
-     * 
-     * @returns Género en boolean.
-     * 
-     */ 
-    getGenero(): boolean{
-        return this.genero;
-    }
-
-
-    /**
-     * 
-     * @returns Altura en cm.
-     * 
-     */ 
-    getAltura(): number{
-        return this.altura;
-    }
 
     /**
      * 
