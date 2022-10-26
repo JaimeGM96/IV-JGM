@@ -64,6 +64,41 @@ export class Dieta{
         }
         return mensaje;
     }
+    
+
+    /**
+     * 
+     * @param i Posicion del array a buscar
+     * 
+     * @returns Las grasas que tiene la comida del array en la posicion i
+     * 
+    */
+    getGrasaComida(i: number): number{
+        return this.comidas[i].grasas;
+    }
+
+
+    /**
+     * 
+     * @param i Posicion del array a buscar
+     * 
+     * @returns Los hidratos de carbono que tiene la comida del array en la posicion i
+     * 
+    */
+    getHidratosComida(i: number): number{
+        return this.comidas[i].hidratosCarbono;
+    }
+
+    /**
+     * 
+     * @param i Posicion del array a buscar
+     * 
+     * @returns Las proteinas que tiene la comida del array en la posicion i
+     * 
+    */
+    getProteinaComida(i: number): number{
+        return this.comidas[i].proteinas;
+    }
 
     /**
      * 
@@ -71,6 +106,6 @@ export class Dieta{
      * 
      */
      getDatosDieta(): string{
-        return `Tipo de dieta: ${this.t_Dieta}, \nComidas: ${this.comidasToString()}, Num_Comidas: ${this.numComida},Horas de ayuno: ${this.horasAyuno},\nId_Cliente: ${this.idNutricionista}, \nId_Nutricionisat: ${this.idCliente}`
+        return `Tipo de dieta: ${this.t_Dieta}, \nComidas: ${this.comidasToString()}, Num_Comidas: ${this.numComida},Horas de ayuno: ${this.horasAyuno},\nId_Cliente: ${this.idCliente}, \nId_Nutricionisat: ${this.idNutricionista}`
     }
 }
