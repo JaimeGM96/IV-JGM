@@ -21,6 +21,6 @@ let marcos:Nutricionista = new Nutricionista(1234, "Marcos", 'Lucas', 'Techado',
 console.log(`*** Datos de un Nutricionista ***`)
 console.log(marcos.getFichaCompleta() + `\n`)
 
-let dieta_1:Dieta = new Dieta(tipoDieta.hiper,comidas, 6, 4432, 34234);
+let dieta_1:Dieta = new Dieta(tipoDieta.hiper,comidas, 6, 3200, 4432, 34234);
 console.log(`*** Datos de una dieta ***`)
 console.log(dieta_1.getDatosDieta() + `\n`)

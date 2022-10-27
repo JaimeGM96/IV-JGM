@@ -8,8 +8,10 @@ export class Dieta{
     comidas: Comida[] = new Array();
     numComida: number;
     horasAyuno: number;
+    totalCalorias: number
     private idNutricionista: number;
     private idCliente: number;
+
     
     /**
      * Crea un objeto de la clase Dietas.
@@ -21,13 +23,14 @@ export class Dieta{
      * @returns Objeto de la clase Dietas.
      * 
      */    
-    constructor(t_Dieta: tipoDieta, cms: Comida[], horasAyuno: number, idNutricionista: number, idCliente: number){
+    constructor(t_Dieta: tipoDieta, cms: Comida[], horasAyuno: number, totalCalorias: number, idNutricionista: number, idCliente: number){
         this.t_Dieta = t_Dieta;
         this.numComida = cms.length;
         for(var i = 0;i< cms.length;i++) { 
             this.comidas.push(cms[i]);
         }
         this.horasAyuno = horasAyuno;
+        this.totalCalorias = totalCalorias;
         this.idNutricionista = idNutricionista;
         this.idCliente = idCliente;
     }
@@ -106,6 +109,6 @@ export class Dieta{
      * 
      */
      getDatosDieta(): string{
-        return `Tipo de dieta: ${this.t_Dieta}, \nComidas: ${this.comidasToString()}, Num_Comidas: ${this.numComida},Horas de ayuno: ${this.horasAyuno},\nId_Cliente: ${this.idCliente}, \nId_Nutricionisat: ${this.idNutricionista}`
+        return `Tipo de dieta: ${this.t_Dieta}, \nComidas: ${this.comidasToString()}, Num_Comidas: ${this.numComida},Horas de ayuno: ${this.horasAyuno},\nTotal calorias: ${this.totalCalorias}, \nId_Cliente: ${this.idCliente}, \nId_Nutricionisat: ${this.idNutricionista}`
     }
 }
