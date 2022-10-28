@@ -13,4 +13,5 @@ Se han creado 3 clases principales:
 - Clase Comidas con los datos básicos para posteriormente poder hacer cálculos con ellos.
 - Enum tipoDietas usado para decidir el tipo de dieta que se quiere seguir.
 
+
 Además se ha creado un fichero de pruebas que muestra simplemente por consola los datos de las clases creadas a modo de ejemplo.
