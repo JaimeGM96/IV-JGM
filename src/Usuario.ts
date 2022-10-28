@@ -32,7 +32,7 @@ export abstract class Usuario{
      * 
      * @returns Nombre del usuario.
      * 
-     */    
+    */    
      getNombre(): string{
         return `${this.nombre}`;
     }
