@@ -22,7 +22,7 @@ export class Dieta{
      * 
      * @returns Objeto de la clase Dietas.
      * 
-     */    
+    */    
     constructor(t_Dieta: tipoDieta, cms: Comida[], horasAyuno: number, totalCalorias: number, idNutricionista: number, idCliente: number){
         this.t_Dieta = t_Dieta;
         this.numComida = cms.length;
@@ -41,7 +41,7 @@ export class Dieta{
      * 
      * @returns Identificador del nutricionista
      * 
-     */
+    */
     getIdNutricionista(): number{
         return this.idNutricionista;
     }    
@@ -50,7 +50,7 @@ export class Dieta{
      * 
      * @returns Identificador del cliente
      * 
-     */
+    */
     getIdCliente(): number{
         return this.idCliente;
     }
@@ -107,7 +107,7 @@ export class Dieta{
      * 
      * @returns Devuelve todos los datos de un objeto creado de la clase Nutricionista, se usa a modo de comprobación.
      * 
-     */
+    */
      getDatosDieta(): string{
         return `Tipo de dieta: ${this.t_Dieta}, \nComidas: ${this.comidasToString()}, Num_Comidas: ${this.numComida},Horas de ayuno: ${this.horasAyuno},\nTotal calorias: ${this.totalCalorias}, \nId_Cliente: ${this.idCliente}, \nId_Nutricionisat: ${this.idNutricionista}`
     }
