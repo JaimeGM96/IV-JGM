@@ -10,3 +10,4 @@ El objetivo del desarrollo de este proyecto consiste en generar automáticamente
 - Configuración de git [enlace](docs/configuracion-git.md).
 - Historias de usuario [enlace](docs/historias-usuario.md).
 - Milestones [enlace](docs/milestones.md).
+- Objetivo 2 [enlace](docs/objetivo2.md)

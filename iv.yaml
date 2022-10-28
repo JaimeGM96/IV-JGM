@@ -1,0 +1,6 @@
+lenguaje: typescript
+entidad:
+  - src/Cliente.ts
+  - src/Nutricionista.ts
+  - src/Dietas.ts
+  - src/Comida.ts
