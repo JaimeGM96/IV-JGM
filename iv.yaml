@@ -1,6 +1,6 @@
 lenguaje: typescript
 entidad:
-  - scr/Cliente.ts
-  - scr/Nutricionista.ts
-  - scr/Dietas.ts
+  - src/Cliente.ts
+  - src/Nutricionista.ts
+  - src/Dietas.ts
   - src/Comida.ts
