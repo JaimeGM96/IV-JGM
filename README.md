@@ -12,4 +12,4 @@ El objetivo del desarrollo de este proyecto consiste en generar automáticamente
 - [Milestones](docs/milestones.md).
 - [Objetivo 2](docs/objetivo2.md).
 - [Gestor de dependencias](docs/gestor-dependencias.md).
-<!-- - [Gestor de tareas](docs/gestor-tareas.md).  -->
+- [Gestor de tareas](docs/gestor-tareas.md). 
