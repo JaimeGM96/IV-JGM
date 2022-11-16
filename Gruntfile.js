@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
     grunt.registerTask("check", function () {
-        "yarn eslint src/*.ts";
+        "yarn eslint .";
     });
 }
