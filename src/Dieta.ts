@@ -5,7 +5,7 @@ import { tipoDieta } from './tipoDietas';
 export class Dieta{
 
     t_Dieta: tipoDieta;
-    comidas: Comida[] = new Array();
+    comidas: Comida[] = [];
     numComida: number;
     horasAyuno: number;
     totalCalorias: number
@@ -26,7 +26,7 @@ export class Dieta{
     constructor(t_Dieta: tipoDieta, cms: Comida[], horasAyuno: number, totalCalorias: number, idNutricionista: number, idCliente: number){
         this.t_Dieta = t_Dieta;
         this.numComida = cms.length;
-        for(var i = 0;i< cms.length;i++) { 
+        for(let i = 0; i < cms.length; i++) { 
             this.comidas.push(cms[i]);
         }
         this.horasAyuno = horasAyuno;
@@ -61,8 +61,8 @@ export class Dieta{
      * 
     */
     comidasToString(): string{
-        var mensaje: string ='';
-        for(var i = 0;i< this.numComida; i++) { 
+        let mensaje = "";
+        for(let i = 0; i < this.numComida; i++) { 
             mensaje += "\n"+ i + " " + this.comidas[i].to_String();
         }
         return mensaje;
