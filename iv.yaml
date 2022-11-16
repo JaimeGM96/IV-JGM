@@ -4,3 +4,6 @@ entidad:
   - src/Nutricionista.ts
   - src/Dietas.ts
   - src/Comida.ts
+automatizar:
+  fichero: package.json
+  orden: grunt
