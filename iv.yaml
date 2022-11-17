@@ -5,5 +5,5 @@ entidad:
   - src/Dietas.ts
   - src/Comida.ts
 automatizar:
-  fichero: package.json
+  fichero: Gruntfile.js
   orden: grunt
