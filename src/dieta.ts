@@ -1,10 +1,10 @@
-import { Comida } from './Comida';
-import { tipoDieta } from './tipoDietas';
+import { Comida } from './comida';
+import { tipo_dieta } from './tipo_dieta';
 
 
 export class Dieta{
 
-    t_Dieta: tipoDieta;
+    t_Dieta: tipo_dieta;
     comidas: Comida[] = [];
     numComida: number;
     horasAyuno: number;
@@ -23,7 +23,7 @@ export class Dieta{
      * @returns Objeto de la clase Dietas.
      * 
     */    
-    constructor(t_Dieta: tipoDieta, cms: Comida[], horasAyuno: number, totalCalorias: number, idNutricionista: number, idCliente: number){
+    constructor(t_Dieta: tipo_dieta, cms: Comida[], horasAyuno: number, totalCalorias: number, idNutricionista: number, idCliente: number){
         this.t_Dieta = t_Dieta;
         this.numComida = cms.length;
         for(let i = 0; i < cms.length; i++) { 
