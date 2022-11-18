@@ -9,7 +9,7 @@ El objetivo del desarrollo de este proyecto consiste en generar automáticamente
 Para la instalación del proyecto se deberá ejecutar el siguiente comando
 
 ```shell
-yarn install
+grunt install
 ```
 
 Para comprobar que el código está bien escrito y que no hay errores se deberá ejecutar el siguiente comando:
