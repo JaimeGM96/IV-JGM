@@ -7,8 +7,6 @@
   "author": "JaimeGM96 <jaimegallardo@correo.ugr.es>",
   "license": "MIT",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.43.0",
-    "@typescript-eslint/parser": "^5.43.0",
     "eslint": "^8.27.0",
     "grunt": "^1.5.3",
     "grunt-cli": "^1.4.3",
