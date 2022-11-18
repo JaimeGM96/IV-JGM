@@ -1,7 +1,7 @@
 # Gestor de tareas
 
 ## Grunt
-El primer gestor de tareas que vamos a ver es [Grunt](https://gruntjs.com/). Es un gestor de tareas que nos permite automatizar tareas como compilación, ejecución de test, comprobación del código, etc, y que funciona sobre Node.js. Las tareas se definen en un fichero `Gruntfile.js` y se ejecutan a través de la terminal con el comando `grunt <nombre-tarea>`. Grunt dispone de una gran cantidad de plugins ya que ha sido durante mucho tiempo la opción más popular. No es la opción más rápida de las que vamos a ver aunque la diferencia es muy pequeña.
+El primer gestor de tareas que vamos a ver es [Grunt](https://gruntjs.com/). Es un gestor de tareas que nos permite automatizar tareas como compilación, ejecución de test, comprobación del código, etc, y que funciona sobre Node.js. Grunt dispone de una gran cantidad de plugins ya que ha sido durante mucho tiempo la opción más popular. No es la opción más rápida de las que vamos a ver aunque la diferencia es muy pequeña.
 
 ## Gulp
 El segundo gestor de tareas que vamos a ver es [Gulp](https://gulpjs.com/). Tiene el mismo propósito que Grunt, automatizar tareas. Su uso es muy similar, lo único que cambia es el fichero donde se definen las tareas. La configuración de las tareas es algo más compleja que en Grunt pero también es más potente. Hace uso de streams para la ejecución de las tareas, lo que hace que sea más rápido. Tiene menos cantidad de plugins que Grunt aunque los más importantes están disponibles.
