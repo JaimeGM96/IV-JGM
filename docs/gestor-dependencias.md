@@ -1,5 +1,4 @@
 # Gestor de dependencias
-En este fichero se va a analizar cuales son los posibles gestores de dependencias que hay para TypeScript y cuál y porqué se ha elegido para este proyecto.
 
 ## NPM
 El primer gestor de dependencias que vamos a ver es [NPM](https://www.npmjs.com/). Sus siglas corresponden con Node Package Manager y es el gestor de dependencias estandar para Node.js. Nos permite compartir e instalar paquetes para JavaScript y por lo tanto también para TypeScript. Su funcionamiento consiste en, a través de la terminal, ejecutar el comando `npm install` y se instalarán todas las dependencias que se encuentren en el fichero `package.json`. Este fichero se crea automáticamente cuando se ejecuta el comando `npm init` y se le van añadiendo las dependencias que se vayan instalando. También dispone del fichero `package-lock.json` donde se listan las versiones de las dependencias instaladas. El principal problema de NPM es su eficiencia. Cada vez que ejecutamos install se instalan todas las dependencias y esto hace que para proyectos grandes se convierta en un proceso muy lento.

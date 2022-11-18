@@ -1,5 +1,4 @@
 # Gestor de tareas
-En este fichero se va a analizar cuales son los posibles gestores de tareas que hay para TypeScript y cuál y porqué se ha elegido para este proyecto.
 
 ## Grunt
 El primer gestor de tareas que vamos a ver es [Grunt](https://gruntjs.com/). Es un gestor de tareas que nos permite automatizar tareas como compilación, ejecución de test, comprobación del código, etc, y que funciona sobre Node.js. Las tareas se definen en un fichero `Gruntfile.js` y se ejecutan a través de la terminal con el comando `grunt <nombre-tarea>`. Grunt dispone de una gran cantidad de plugins ya que ha sido durante mucho tiempo la opción más popular. No es la opción más rápida de las que vamos a ver aunque la diferencia es muy pequeña.
