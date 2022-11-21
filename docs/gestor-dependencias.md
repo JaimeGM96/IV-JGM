@@ -1,13 +1,5 @@
 # Gestor de dependencias
-
-## NPM
-El primer gestor de dependencias que vamos a ver es [NPM](https://www.npmjs.com/). Sus siglas corresponden con Node Package Manager y es el gestor de dependencias estandar para Node.js. Nos permite compartir e instalar paquetes para JavaScript y por lo tanto también para TypeScript. Al ser el gestor de dependencias estandar, tiene una gran comunidad detrás haciendo que los paquetes que se implementan estén disponibles para NPM. Era el más lento de los gestores que vamos a ver pero después de la versión 5 ha mejorado mucho. Es sencillo de usar y la mayoría de la documentación de los paquetes usa NPM como ejemplo.
-
-## Yarn
-El siguiente gestor de dependencias que vamos a ver es [Yarn](https://yarnpkg.com/). Es un gestor de dependencias basado en NPM pero enfocado en la seguridad y en la velocidad. La principales diferencias que tiene con NPM son que, utiliza un sistema de caché para la instalación de las dependencias, por lo que los paquetes ya instalados no los vuelve a descargar, y realiza la descarga de las dependencias en paralelo.
-
-## Pnpm
-El último gestor de dependencias que vamos a ver es [Pnpm](https://pnpm.io/). Al igual que Yarn, también está basado en NPM y usa un sistema parecido de caché. La diferencia con este último es que usa un sistema de almacenamiento compartido entre los diferentes proyectos, por lo que si en un proyecto se instala una dependencia, en otro proyecto que también la necesite, no se volverá a instalar, sino que se usará la misma que ya está instalada. En cuanto a eficiencia es el más rápido de los tres. Esta es una muy buena opción si se trabaja con varios proyectos que requieran las mismas dependencias.
-
-## Elección
-Como solo vamos a trabajar con un proyecto y la diferencia de eficiencia no es tan grande, he decidido usar Yarn como gestor de dependencias.
+Tanto en JavaScript como en TypeScript, los paquetes de terceros (dependencias) se listan en el archivo `package.json`, introducido por npm que es el estándar de node.js. A la hora de la instalación/gestión de los mismos, es donde se diferencian los gestores de dependencias: 
+- [npm](https://www.npmjs.com/) es muy sencillo de configurar y usar. Hasta la última versión no destacaba por su velocidad, pero con la versión 5 ha mejorado significativamente.
+- [yarn](https://yarnpkg.com/) se centra en la seguridad y es más rápido que npm. Usa un sistema de caché para la instalación de las dependecias y además realiza la descarga de las mismas en paralelo de ahí que consiga esa velocidad. Sencillo de configurar y usar.
+- [pnpm](https://pnpm.io/) usa un sistema de caché parecido al de Yarn. Usa un sistema de almacenamiento compartido entre los diferentes proyectos, evitando duplicidades y reduciendo la carga a la hora de instalar las dependencias. Es el más rápido y útil en proyectos grandes.
