@@ -1,9 +1,11 @@
 module.exports = function(grunt) {
+    let shell = require('shelljs');
+
     grunt.registerTask("check", function () {
-        "tsc --noEmit src/*.ts";
+        shell.exec("tsc --noEmit src/*.ts");
     });
 
     grunt.registerTask("install", function () {
-        "yarn install";
+        shell.exec("yarn install");
     });
 }
