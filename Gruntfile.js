@@ -6,6 +6,6 @@ module.exports = function(grunt) {
     });
 
     grunt.registerTask("install", function () {
-        shell.exec("yarn install");
+        shell.exec("pnpm install");
     });
 }
