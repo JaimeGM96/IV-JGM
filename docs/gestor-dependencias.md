@@ -6,4 +6,4 @@ A la hora de elegir un gestor de dependencias, hay ciertos aspectos que debemos 
 - [pnpm](https://pnpm.io/) usa un sistema de caché parecido al de Yarn. Usa un sistema de almacenamiento compartido entre los diferentes proyectos, evitando duplicidades y reduciendo la carga a la hora de instalar las dependencias. Es el más rápido y útil en proyectos grandes. Está creciendo por lo que está en continuo mantenimiento. Usa checksums para la seguridad.
 
 ## Elección
-El proyecto en el que vamos a trabajar no es muy grande por lo que a pnpm no le sacamos el máximo partido, así que elegimos Yarn por su velocidad. 
+El proyecto en el que vamos a trabajar no es muy grande por lo que a pnpm no le sacamos el máximo partido, así que elegimos Yarn por todo lo nombrado anteriormente. 
