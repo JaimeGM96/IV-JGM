@@ -1,4 +1,4 @@
-import { Usuario } from './Usuario';
+import { Usuario } from './usuario';
 export class Nutricionista extends Usuario{
 
     private Id_Nutricionista: number;

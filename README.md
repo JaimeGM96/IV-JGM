@@ -5,9 +5,23 @@ La mayor parte del tiempo de trabajo de un nutricionista consiste en crear las d
 
 El objetivo del desarrollo de este proyecto consiste en generar automáticamente dietas para los diferentes clientes que tenga el nutricionista y, con está solución, conseguir reducir notablemente el tiempo que se emplea en crear dichas dietas dada la complejidad que las mismas pueden tener. Con esto conseguiriamos aumentar la productividad ya que se podría emplear el tiempo ganado en otras tareas/citas.
 
+## Instalación y uso
+Para la instalación del proyecto se deberá ejecutar el siguiente comando
+
+```shell
+grunt install
+```
+
+Para comprobar que el código está bien escrito y que no hay errores se deberá ejecutar el siguiente comando:
+
+```shell
+grunt check
+```
 
 ## Documentación
-- Configuración de git [enlace](docs/configuracion-git.md).
-- Historias de usuario [enlace](docs/historias-usuario.md).
-- Milestones [enlace](docs/milestones.md).
-- Objetivo 2 [enlace](docs/objetivo2.md)
+- [Configuración de git](docs/configuracion-git.md).
+- [Historias de usuario](docs/historias-usuario.md).
+- [Milestones](docs/milestones.md).
+- [Objetivo 2](docs/objetivo2.md).
+- [Gestor de dependencias](docs/gestor-dependencias.md).
+- [Gestor de tareas](docs/gestor-tareas.md). 
