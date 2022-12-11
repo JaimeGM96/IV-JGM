@@ -25,3 +25,4 @@ grunt check
 - [Objetivo 2](docs/objetivo2.md).
 - [Gestor de dependencias](docs/gestor-dependencias.md).
 - [Gestor de tareas](docs/gestor-tareas.md). 
+- [Gestor de tests](docs/gestor-tests.md).
